@@ -7,6 +7,7 @@ https://leetcode-cn.com/problems/add-to-array-form-of-integer/
 位值，运算完记得把k/10.
 3.若数组跑完k还有值或进位有值，则再跑一遍循环处理完剩余的数据
 4.最后对整个数组首尾交换即可
+```Go
 代码：
 func largestRectangleArea(heights []int) int {
     stack := []int{}
@@ -31,7 +32,7 @@ func largestRectangleArea(heights []int) int {
     }
     return result
 }
-
+```
 func max(x, y int) int{
     if x > y{
         return x
